@@ -9,17 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Байкал</title>
-
+    
+    <link rel="stylesheet" href='./css/jquery.flipster.min.css'>
     <link rel="stylesheet" href="build/css/intlTelInput.css">
     <link rel="stylesheet" href="./css/phonecode.css">
     <link rel="stylesheet" href='./css/reset.css'>
     <link rel="stylesheet" href='./css/style.css'>
     <link rel="stylesheet" href='./css/media.css'>
-    
+    <link rel="stylesheet" href='./css/demo.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="./js/counties.js"></script>
     <script src="./js/phonecode.js"></script>
+
+   
+    <script src="./js/jquery.flipster.js"></script>
 </head>
 <body>
     <header class="header">
@@ -114,55 +118,48 @@
             </div>
             <img src="./source/perks/fly.svg" class="perks__fly" alt="">
         </section>
-        <section class="slider">
-            <div class="slider__content">
-                <div class="slider__track">
-                    <div class="slider__control slider__controlLeft">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
-                                    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
-                                    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
-                            </g>
-                        </g>
-                        </svg>
-                    </div>
-                    <div class="slider__control slider__controlRight">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
-                                    L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
-                                    l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
-                            </g>
-                        </g>
-                        </svg>
-                    </div>
-                    <div class="slider__trackWrap">
-                        <div class="slider__block slider__block--last">
-                            <img src="./source/firstscreen/bg2.jpg" alt="">
-                        </div>
-                        <div class="slider__block slider__block--carrent">
-                            <img src="./source/firstscreen/bg2.jpg" alt="">
-                        </div>
-                        <div class="slider__block slider__block--next">
-                            <img src="./source/firstscreen/bg2.jpg" alt="">
-                        </div>
-                        <!-- <div class="slider__block">
-                            <img src="./source/firstscreen/bg2.jpg" alt="">
-                        </div>
-                        <div class="slider__block">
-                            <img src="./source/firstscreen/bg2.jpg" alt="">
-                        </div>
-                        <div class="slider__block">
-                            <img src="./source/firstscreen/bg2.jpg" alt="">
-                        </div> -->
-                    </div>
+        <section class="slider"> 
+                <div id="flat">
+                    <ul>
+                        <li data-flip-title="Red">
+                            <img src="./source/firstscreen/bg.png">
+                        </li>
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="./source/firstscreen/bg2.jpg">
+                         </li>
+                         <li data-flip-title="Red">
+                            <img src="./source/firstscreen/bg.png">
+                        </li>
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="./source/firstscreen/bg2.jpg">
+                         </li>
+                         <li data-flip-title="Red">
+                            <img src="./source/firstscreen/bg.png">
+                        </li>
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="./source/firstscreen/bg2.jpg">
+                         </li>
+                         <li data-flip-title="Red">
+                            <img src="./source/firstscreen/bg.png">
+                        </li>
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="./source/firstscreen/bg2.jpg">
+                         </li>
+                         <li data-flip-title="Red">
+                            <img src="./source/firstscreen/bg.png">
+                        </li>
+                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+                            <img src="./source/firstscreen/bg2.jpg">
+                         </li>
+                    </ul>
                 </div>
-            </div>
+            
+            <script>
+                var flat = $("#flat").flipster({
+                    style: 'flat',
+                    spacing: -0.25
+                });
+            </script>
         </section>
         <section class="see">
             <img class="see__bg see__bg1" src="./source/see/bg1.svg" alt="">

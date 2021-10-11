@@ -1,0 +1,17 @@
+/*
+* Base Template
+* Combines HTML5 Boilerplate & Boostrap. Includes some basic templating.
+* Authored by Stephen Shaw (shshaw@gmail.com)
+*/
+
+/* @group Basics */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#flat li{
+  max-width: 600px;
+}

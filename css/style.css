@@ -914,7 +914,7 @@ input[type="radio"]:checked + label:after {
 
 /* footer */
 .footer{
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .footer__backArrow svg{
     height: 20px;

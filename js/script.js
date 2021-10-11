@@ -4,4 +4,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
     numDay.forEach((item, index)=>{
         item.innerHTML = index + 1;
     })
+
+
+    // Анимация при скролл 
+
 })
