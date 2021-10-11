@@ -13,7 +13,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
     console.dir(startBlock[0]);
     
     function showElem(elem){
-        if (window.scrollY > elem.offsetTop + 100){
+        window.addEventListener('scroll',()=>{
+            if (window.scrollY > elem.offsetTop - window.screen.height /6){
             
             let startAnimChild = elem.querySelectorAll('.startAnim');
 
@@ -21,6 +22,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
                 item.classList.add('endAnim');
             })
         }
+        })
+        
     }
     window.addEventListener('scroll', showElem(startBlock[0]) )
    

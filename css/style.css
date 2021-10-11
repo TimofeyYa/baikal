@@ -194,6 +194,7 @@ h2{
 /* slider */
 .slider{
     overflow: hidden;
+    padding-top: 50px;
 }
 .slider__block{
     height: 500px;
