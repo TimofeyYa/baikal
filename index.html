@@ -39,10 +39,26 @@
                     <li class="header__nav-item">Что входит</li>
                     <li class="header__nav-item">Вопросы</li>
                 </ul>
+                <div class="header__navMob">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+                </div>
             </nav>
             <div class="header__phones">
                 <a href="tel:+79148719429">+7 914 871 94 29</a>
                 <a href="tel:+7800257684">+7 800 25 76 84</a>
+            </div>
+            <div class="header__mobMenu">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 250.579 250.579" style="enable-background:new 0 0 250.579 250.579;" xml:space="preserve">
+                <g id="Menu">
+                    <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M22.373,76.068h205.832c12.356,0,22.374-10.017,22.374-22.373
+                        c0-12.356-10.017-22.373-22.374-22.373H22.373C10.017,31.323,0,41.339,0,53.696C0,66.052,10.017,76.068,22.373,76.068z
+                        M228.205,102.916H22.373C10.017,102.916,0,112.933,0,125.289c0,12.357,10.017,22.373,22.373,22.373h205.832
+                        c12.356,0,22.374-10.016,22.374-22.373C250.579,112.933,240.561,102.916,228.205,102.916z M228.205,174.51H22.373
+                        C10.017,174.51,0,184.526,0,196.883c0,12.356,10.017,22.373,22.373,22.373h205.832c12.356,0,22.374-10.017,22.374-22.373
+                        C250.579,184.526,240.561,174.51,228.205,174.51z"/>
+                </g>
+                </svg>
             </div>
         </div>
     </header>
@@ -89,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <section class="perks startBlock">
+        <!-- <section class="perks startBlock">
             <div class="container">
                 <div class="perks__title">
                     <h2>Путешественникам, ищущим движения и открытий в гармонии с комфортом и отдыхом</h2>
@@ -119,49 +135,25 @@
             <img src="./source/perks/fly.svg" class="perks__fly" alt="">
         </section>
         <section class="slider"> 
-                <div id="flat">
-                    <ul>
-                        <li data-flip-title="Red">
-                            <img src="./source/firstscreen/bg.png">
-                        </li>
-                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                            <img src="./source/firstscreen/bg2.jpg">
-                         </li>
-                         <li data-flip-title="Red">
-                            <img src="./source/firstscreen/bg.png">
-                        </li>
-                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                            <img src="./source/firstscreen/bg2.jpg">
-                         </li>
-                         <li data-flip-title="Red">
-                            <img src="./source/firstscreen/bg.png">
-                        </li>
-                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                            <img src="./source/firstscreen/bg2.jpg">
-                         </li>
-                         <li data-flip-title="Red">
-                            <img src="./source/firstscreen/bg.png">
-                        </li>
-                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                            <img src="./source/firstscreen/bg2.jpg">
-                         </li>
-                         <li data-flip-title="Red">
-                            <img src="./source/firstscreen/bg.png">
-                        </li>
-                        <li data-flip-title="Razzmatazz" data-flip-category="Purples">
-                            <img src="./source/firstscreen/bg2.jpg">
-                         </li>
-                    </ul>
+                <div class="slider__track">
+                    <img src="./source/firstscreen/bg2.jpg" class="slider__trackBlock">
+                    <img src="./source/firstscreen/bg2.jpg" class="slider__trackBlock">
+                    <img src="./source/firstscreen/bg2.jpg" class="slider__trackBlock">
+                    <img src="./source/firstscreen/bg2.jpg" class="slider__trackBlock">
+                    <img src="./source/firstscreen/bg2.jpg" class="slider__trackBlock">
                 </div>
-            
-            <script>
-                var flat = $("#flat").flipster({
-                    style: 'flat',
-                    spacing: -2
-                });
-            </script>
+                <div class="slider__control slider__control-left">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.41 10.59L2.83 6L7.41 1.41L6 0L0 6L6 12L7.41 10.59Z" fill="black"></path>
+                    </svg>
+                </div>
+                <div class="slider__control slider__control-right">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.589999 1.41L5.17 6L0.59 10.59L2 12L8 6L2 5.24537e-07L0.589999 1.41Z" fill="black"></path>
+                    </svg>
+                </div>
         </section>
-        <section class="see">
+        <section class="see startBlock">
             <img class="see__bg see__bg1" src="./source/see/bg1.svg" alt="">
             <img class="see__bg see__bg2" src="./source/see/bg2.svg" alt="">
             <div class="container">
@@ -171,22 +163,22 @@
                     <div style="background: #B7E7F7 " class="perks__line perks__miniline"></div>
                 </div>
                 <div class="see__top">
-                    <div style="border-color: #B7E7F7" class="see__topBlock">
+                    <div style="border-color: #B7E7F7" class="see__topBlock startAnim">
                         <h4>Старинный сибирский город Иркутск</h4>
                     </div>
-                    <div style="border-color: #B7E7F7" class="see__topBlock">
+                    <div style="border-color: #B7E7F7" class="see__topBlock startAnim">
                         <h4>Старинный сибирский город Иркутск</h4>
                     </div>
-                    <div style="border-color: #B7E7F7" class="see__topBlock">
+                    <div style="border-color: #B7E7F7" class="see__topBlock startAnim">
                         <h4>Старинный сибирский город Иркутск</h4>
                     </div>
-                    <div style="border-color: #B7E7F7" class="see__topBlock">
+                    <div style="border-color: #B7E7F7" class="see__topBlock startAnim">
                         <h4>Старинный сибирский город Иркутск</h4>
                     </div>
-                    <div style="border-color: #B7E7F7" class="see__topBlock">
+                    <div style="border-color: #B7E7F7" class="see__topBlock startAnim">
                         <h4>Старинный сибирский город Иркутск</h4>
                     </div>
-                    <div style="border-color: #B7E7F7" class="see__topBlock">
+                    <div style="border-color: #B7E7F7" class="see__topBlock startAnim">
                         <h4>Старинный сибирский город Иркутск</h4>
                     </div> 
                 </div>
@@ -388,7 +380,7 @@
             <div class="container">
                 <div class="container">
                     <div class="perks__title">
-                        <h2>Описание програм</h2>
+                        <h2>Описание программы</h2>
                         <div style="background: #B7E7F7 " class="perks__line perks__bigline"></div>
                         <div style="background: #B7E7F7 " class="perks__line perks__miniline"></div>
                     </div>
@@ -462,7 +454,7 @@
                         </div>
 
                         <div class="offer__formBlock">
-                            <label class="offer__inpName">
+                            <label class="offer__inpName ">
                                 <p class="offer__formTxt">Mail</p>
                                 <input type="text">
                             </label>
@@ -499,6 +491,9 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            <div class="package__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="313" height="302" viewBox="0 0 313 302" fill="none"> <path d="M128.859 25.9913C127.129 71.5801 120.669 98.6673 90.0599 140.976C89.1254 133.583 82.8811 127.808 75.2459 127.808H15.0492C6.77702 127.808 0 134.585 0 142.857V278.3C0 286.572 6.77702 293.349 15.0492 293.349H75.2459C81.9612 293.349 87.5531 288.874 89.4719 282.768C95.051 287.294 99.6707 291.011 104.169 293.702C109.918 297.142 116.063 299.091 125.331 300.051C143.868 301.971 175.594 300.569 248.311 300.874C249.172 300.836 250.018 300.501 250.663 299.933C265.845 287.548 271.357 276.677 273.824 263.251C275.404 263.525 276.629 262.84 277.587 261.84C289.001 247.574 291.959 231.224 288.051 218.103H289.697C290.821 218.104 291.933 217.57 292.636 216.692C304.38 202.015 307.301 185.081 302.865 171.78C302.639 171.04 302.182 170.373 301.571 169.899C310.103 160.939 313.617 150.298 312.506 140.623C310.646 126.869 301.138 118.38 293.459 116.521H192.347C199.048 77.3439 195.04 41.16 182.354 18.8192C175.832 7.33513 166.825 1.37419 158.016 0.125485C139.8 -1.46713 129.514 12.3755 128.859 25.9913ZM175.887 22.5817C187.616 43.2355 192.058 79.9986 184.47 119.578C184.059 121.729 185.925 124.016 188.115 124.046H292.401C299.609 127.424 304.218 133.891 305.099 141.564C305.968 149.133 303.035 157.751 295.34 165.431H255.748C253.76 165.393 251.932 167.205 251.932 169.193C251.932 171.181 253.76 172.984 255.748 172.956H295.575C295.577 173.396 295.658 173.836 295.809 174.249C299.195 184.403 297.047 197.979 287.579 210.579H248.223C246.236 210.541 244.408 212.353 244.408 214.341C244.408 216.329 246.236 218.131 248.223 218.103H280.526C280.528 218.544 280.609 218.984 280.759 219.397C284.146 229.551 281.998 243.127 272.529 255.726H240.699C238.711 255.689 236.883 257.5 236.883 259.488C236.883 261.477 238.711 263.279 240.699 263.251H266.065C263.826 274.514 259.762 282.614 246.901 293.349C175.398 293.074 143.247 294.297 126.154 292.527C117.535 291.634 112.889 290.132 108.049 287.235C103.371 284.437 98.2324 280.049 90.2951 273.715V153.321C126.5 105.6 134.525 75.2314 136.383 26.2264C140.771 -1.32977 168.472 5.82593 175.887 22.5817ZM15.0492 135.333H75.2459C79.4796 135.333 82.7705 138.624 82.7705 142.857V278.3C82.7705 282.534 79.4796 285.825 75.2459 285.825H15.0492C10.8155 285.825 7.52459 282.534 7.52459 278.3V142.857C7.52459 138.624 10.8155 135.333 15.0492 135.333Z" fill="#B7E7F7"></path> </svg> 
             </div>
         </section>
         <section class="faq">
@@ -677,7 +672,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about startBlock">
             <div class="container">
                 <div class="perks__title">
                     <h2>О нас</h2>
@@ -703,7 +698,7 @@
                             <div class="about__figsCapt">Успешных маршрутов</div>
                         </div>
                     </div>
-                    <div class="about__desc" style="border-color: #B7E7F7;">
+                    <div class="about__desc endAnim" style="border-color: #B7E7F7;">
                         <p>Baikal View Traveller — опытный туроператор с внимательным и душевным подходом к отдыху на Байкале.</p>
                         <p>Создан командой Baikal View Hotel — 10-летним лидером рынка гостиничных услуг на Байкале и туроператорами с 20-летним стажем. Мы станем вашими лучшими проводниками для перезагрузки и получения незабываемых впечатлений!</p>
                     </div>
@@ -788,7 +783,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="build/js/intlTelInput.js"></script>
     <script>
       var input = document.querySelector("#phoneQue");
@@ -845,6 +840,7 @@
     <script src='./js/script.js'></script>
     <script src='./js/program.js'></script>
     <script src='./js/faq.js'></script>
+    <script src='./js/form.js'></script>
     <script src='./js/parallax.min.js'></script>
 </body>
 </html>

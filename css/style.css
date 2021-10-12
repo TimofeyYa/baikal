@@ -195,45 +195,41 @@ h2{
 .slider{
     overflow: hidden;
     padding-top: 50px;
-}
-.slider__block{
-    height: 500px;
-    padding: 0 100px;
-    position: absolute;
-    transform: translate(-50%,0);
-   
-}
-.slider__content{
     position: relative;
 }
-.slider__block--carrent{
-    left: 50%;
+.slider__track{
+    display: flex;
+    transform: translate(0,0);
+    transition: 0.3s;
 }
-.slider__block--last{
-    left: -900px;
+.slider__trackBlock{
+    width: 700px;
+    
 }
-.slider__block--next{
-    left: 900px;
-}
-.slider__block img{
-    height: 100%;
-}
-.slider__trackWrap{
-    margin: 0 auto;
-    background:red;
-    width: 0px;
-    height: 500px;
-    position: relative;
-    z-index: 1;
+.slider__trackBlock:not(:last-child){
+    margin-right: 30px;
 }
 .slider__control{
+    height: 40px;
+    width: 40px;
+    background:#E8E8E8;
     position: absolute;
-    top:0;
-    left: 50px;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    top: 50%;
 }
-
-
+.slider__control svg{
+    fill: black;
+    stroke: black;
+}
+.slider__control-left{
+    left:10%;
+}
+.slider__control-right{
+    right:10%;
+}
 /* see */
 .see{
     padding-top: 110px;
@@ -562,6 +558,7 @@ input[type="radio"]:checked + label:after {
 }
 
 .offer{
+    margin-top: 30px;
     padding: 90px 0px;
     background-size:cover;
     background-repeat:no-repeat;
@@ -599,6 +596,15 @@ input[type="radio"]:checked + label:after {
 }
 .offer__inpName p{
     position: absolute;
+    pointer-events: none;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.offer__inpName-active p{
+    font-size: 8px;
+    top: -8px;
 }
 .offer__formBlock input{
     width: 100%;
@@ -646,6 +652,31 @@ input[type="radio"]:checked + label:after {
 }
 
 /* package */
+.package{
+    position: relative;
+    overflow: hidden;
+}
+
+.package__like{
+    position: absolute;
+    bottom: -55px;
+    left: -360px;
+    animation: likes  1s ease-in-out;
+    transform: rotate(-45deg);
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+.package__like-play{
+    animation-play-state: running;
+}
+@keyframes likes {
+    from {bottom: 0px;
+        left: -360px;
+        transform: rotate(-45deg);}
+    to {bottom: 45px;
+        left: 50px;
+        transform: rotate(0deg);}
+}
 .package .container{
     padding-top: 60px;
     display: grid;
@@ -822,12 +853,26 @@ input[type="radio"]:checked + label:after {
     padding: 20px 30px;
 }
 .question__formBlock {
+    position: relative;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #2593b8;
     margin-bottom: 20px;
+}
+.question__formName{
+    position: absolute;
+    top:50%;
+    left:30px;
+    pointer-events: none;
+    font-size: 17px;
+    transform: translate(0, -50%);
+    transition: 0.3s;
+}
+.question__formBlock-active .question__formName{
+    top:10px;
+    font-size: 11px;
 }
 .question__formBtn{
     padding-top: 20px;
@@ -1010,4 +1055,21 @@ input[type="radio"]:checked + label:after {
 .endAnim{
     transform: translate(0, 0px);
     opacity: 1;
+}
+
+.header__navMob svg{
+    height: 65px;
+    width: 65px;
+    fill: white;
+    stroke: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+.header__mobMenu svg{
+    height: 35px;
+    width: 35px;
+    fill:white;
+    display: none;
 }
